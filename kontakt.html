@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="about.html"><img src="img/logony.png" alt="logo"></a>
+            <ul>
+               <li><a href="about.html">Om</a></li>
+               <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="kontaktform">
+        <h1>Kontakt os</h1>
+        <h2>Skriv til os via kontaktformularen nedenunder.</h2>
+    <form>
+        <label class="visually-hidden" for="navn">Navn</label>
+        <input placeholder="Navn" id="navn" type="text" required>
+
+        <label class="visually-hidden" for="adresse">Adresse</label>
+        <input placeholder="adresse" id="adresse" type="text">
+
+        <label for="telefon">Telefonnummer</label>
+        <input id="telefon" type="text">
+
+        <label for="mail">E-mail</label>
+        <input id="mail" type="text">
+
+        <label for="område">vælg område</label>
+        <select name="select" id="område">
+            <option selected="true" disabled value="0">Vælg område</option>
+            <option value="1">Nordjylland</option>
+            <option value="2">Østjylland</option>
+            <option value="3">Midtjylland</option>
+            <option value="4">Sydjylland</option>
+        </select>
+
+        <fieldset class="checkbox">
+            <legend>vælg hvilken service du ønsker?</legend>
+
+                <div>
+                    <input id="rengøring" name="services" type="checkbox" value="Rengøring">
+                    <label for="rengøring">Rengøring</label>
+                </div>
+
+                <div>
+                    <input id="vinduespudsning" name="services" type="checkbox" value="Vinduespudsning">
+                    <label for="vinduespudsning">Vinduespudsning</label>
+                </div>
+
+                <div>
+                    <input id="forfalden arbejde" name="services" type="checkbox" value="forfalden arbejde">
+                    <label for="forfalden arbejde">forfalden arbejde</label>
+                </div>
+        </fieldset>
+
+        <label for="besked">Skriv en besked</label>
+        <textarea id="besked" cols="20" rows="8"></textarea>
+
+        <fieldset>
+        <legend>Må vi kontakte dig på din telefon?</legend>
+            <input id="ja" type="radio" value="ja" name="kontakes">
+            <label for="ja">Ja</label>
+
+            <input id="nej" type="radio" value="nej" name="kontakes">
+            <label for="nej">Nej</label>
+        </fieldset>
+
+        <input type="submit" name="submit" value="send">
+
+    </form>
+    </main>
+</body>
+</html>
